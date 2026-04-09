@@ -6,10 +6,10 @@ from kivymd.uix.screen import MDScreen
 from kivymd.utils.set_bars_colors import set_bars_colors
 
 
-class SampleApp(MDApp):
+class MafiaApp(MDApp):
 
     def __init__(self, **kwargs) -> None:
-        super(SampleApp, self).__init__(**kwargs)
+        super(MafiaApp, self).__init__(**kwargs)
         self.theme_cls.primary_palette = "Darkblue"
 
     def build(self) -> MDScreen:
@@ -46,6 +46,6 @@ MDScreen:
         )
 
 if __name__ == "__main__":
-    app = SampleApp()
+    app = MafiaApp()
     app.run()
     
